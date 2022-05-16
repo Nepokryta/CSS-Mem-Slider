@@ -144,3 +144,29 @@
     opacity: 1;
     z-index: 1;
 }
+
+@media (max-width: 767px) {
+    .wrapper {
+        height: 200px;
+        width: 350px;
+        margin: 50px auto;
+    }
+    .wrapper .controls {
+        left: 30%;
+    }
+    .text {
+        padding-top: 50px;
+    }
+    .slide1 {
+        background-size: 200px auto;
+    }
+    .slide2 {
+        background-size: 270px auto;
+    }
+    .slide3 {
+        background-size: 300px auto;
+    }
+    .slide4 {
+        background-size: 300px auto;
+    }
+}
