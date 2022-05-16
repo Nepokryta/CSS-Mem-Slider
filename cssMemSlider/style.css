@@ -1,0 +1,78 @@
+* {
+    background-color: beige;
+}
+
+.wrapper {
+    position: relative;
+    height: 350px;
+    width: 700px;
+    margin: 100px auto;
+}
+
+.wrapper .controls {
+    position: absolute;
+    left: 80%;
+}
+
+.wrapper > input {
+    display: none;
+}
+
+.wrapper label {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    height: 9px;
+    width: 9px;
+    margin: 22px 0 0 18px;
+    z-index: 2;
+    border: 2px solid salmon;
+    background-color: salmon;
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4) {
+    background-color:burlywood;
+    border: 2px solid burlywood;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.wrapper label:active,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4) {
+    height: 9px;
+    width: 9px;
+    border: 2px solid burlywood;
+    background: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.wrapper label:before,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4) {
+    height: 9px;
+    width: 9px;
+    border: 2px solid salmon;
+    background: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
