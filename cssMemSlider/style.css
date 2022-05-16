@@ -76,3 +76,49 @@
     -o-border-radius: 50%;
     border-radius: 50%;
 }
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: inherit;
+    width: inherit;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+    z-index: 3;
+}
+
+.slides {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+}
+
+
+.slide1 {
+    background-image: url(img/cooking-fail.gif);
+    background-size: 350px auto;
+    background-position-x: center;
+    background-color:black;
+    background-repeat: repeat-y;
+}
+.slide2 {
+    background-image: url(img/java_script.png);
+    background-size: 525px auto;
+    background-position-x: center;
+    background-color: white;
+    background-repeat: repeat-y;
+}
+.slide3 {
+    background-image: url(img/site_layout.jpg);
+    background-size: 527px auto;
+    background-position-x: center;
+    background-color: black;
+    background-repeat: repeat-y;
+}
+.slide4 {
+    background-image: url(img/clean_code.jpeg);
+    background-size: 525px auto;
+    background-position-x: center;
+    background-color: white;
+    background-repeat: repeat-y;
+}
